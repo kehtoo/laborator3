@@ -1,0 +1,16 @@
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\z7.exe
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\z7.deps.json
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\z7.runtimeconfig.json
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\z7.runtimeconfig.dev.json
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\z7.dll
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\ref\z7.dll
+C:\Users\Kirill\source\repos\z7\z7\bin\Debug\net5.0\z7.pdb
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.csproj.AssemblyReference.cache
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.AssemblyInfoInputs.cache
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.AssemblyInfo.cs
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.csproj.CoreCompileInputs.cache
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.dll
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\ref\z7.dll
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.pdb
+C:\Users\Kirill\source\repos\z7\z7\obj\Debug\net5.0\z7.genruntimeconfig.cache

@@ -20,7 +20,6 @@ namespace task1
             {
                 arr[i] = rand.Next(-30, 45);
                 Console.Write(arr[i] + "\t");
-                if (i % 10 == 0 && i != 0) { Console.WriteLine(); }
             }
             Console.WriteLine("\nНовый массив:");
 

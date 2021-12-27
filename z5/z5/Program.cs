@@ -29,7 +29,7 @@ namespace task1
             int a = 5, b = 5, c = 5;
             double[,] mass1 = new double[a, b];
             double[,] mass2 = new double[b, c];
-            Console.WriteLine("Arr1: ");
+            Console.WriteLine("Массив 1: ");
             for (int i = 0; i < a; i++)
             {
                 for (int j = 0; j < b; j++)
@@ -39,7 +39,7 @@ namespace task1
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("\nArr2: ");
+            Console.WriteLine("\nМассив 2: ");
             for (int i = 0; i < b; i++)
             {
                 for (int j = 0; j < c; j++)
@@ -49,7 +49,7 @@ namespace task1
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine("\nFinal arr:");
+            Console.WriteLine("\nФинальный массив:");
             double[,] Mass = umn(mass1, mass2, a, b, c);
             for (int i = 0; i < a; i++)
             {

@@ -13,25 +13,25 @@ namespace task1
             //Задание 1
 
             int n = 0;
-            Console.Write("Enter number of elements: ");
+            Console.Write("Введите количество элементов: ");
             n = int.Parse(Console.ReadLine());
             int[] arr = new int[n];
 
             Random rand = new Random();
 
-            Console.WriteLine("Ur array:");
+            Console.WriteLine("Массив:");
             for (int i = 0; i < n; i++)
             {
                 arr[i] = rand.Next(-30, 45);
                 Console.Write(arr[i] + "\t");
                 if (i % 10 == 0 && i != 0) { Console.WriteLine(); }
             }
-            Console.WriteLine("\nNew array:");
-            int count = 0;
-            for (int i = n - 1; i >= 0; i--)
+            Console.WriteLine("\nНовый массив:");
+
+            Array.Reverse(arr);
+            for (int i = 0; i < n; i++)
             {
-                if (arr[i] >= 0) { Console.Write(arr[i] + "\t"); count++; }
-                if (i % 10 == 0 && i != 0) { Console.WriteLine(); }
+                if (arr[i] >= 0) { Console.Write(arr[i] + "\t"); }
             }
 
             Console.ReadKey();

@@ -6,7 +6,8 @@ namespace task1
     {
         static void Main()
         {
-            int n = 5;
+            Console.WriteLine("Введите размер массива: ");
+            int n = int.Parse(Console.ReadLine());
             double[,] matrix = new double[n, n];
             Random random = new Random();
             for (int i = 0; i < n; i++)

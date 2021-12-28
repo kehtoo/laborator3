@@ -8,59 +8,95 @@ namespace task1
         {
             //Задание 1
 
-            int n = 0;
-            Console.Write("Введите количество элементов: ");
-            n = int.Parse(Console.ReadLine());
-            int[] arr = new int[n];
-
-            Random rand = new Random();
-
-            Console.WriteLine("Массив:");
-            for (int i = 0; i < n; i++)
+            try
             {
-                arr[i] = rand.Next(-30, 45);
-                Console.Write(arr[i] + "\t");
-            }
-            Console.WriteLine("\nНовый массив:");
+                Console.WriteLine("Программа работает с числами! \nПожалуйста введите число.");
+                Random ran = new Random();
+                Console.Write("Введите кол-во элементов массива: ");
+                int value = int.Parse(Console.ReadLine());
 
-            Array.Reverse(arr);
-            for (int i = 0; i < n; i++)
+
+                int[] mas = new int[value];
+                Console.WriteLine("массив: ");
+                for (int i = 0; i < mas.Length; i++)
+                {
+                    mas[i] = ran.Next(-30, 45);
+                }
+
+                for (int i = 0; i < mas.Length; i++)
+                {
+                    if (i % 10 == 0)
+                    {
+                        Console.WriteLine("\n");
+                    }
+                    Console.Write(mas[i] + "\t");
+                }
+                Console.WriteLine("\nЭлементы массива в обратном направлении без отрицательных чисел: ");
+                Array.Reverse(mas);
+                int count = 0;
+                for (int i = 0; i < mas.Length; i++)
+                {
+                    if (mas[i] >= 0)
+                    {
+                        if (count % 10 == 0)
+                        {
+                            Console.WriteLine("\n");
+                        }
+                        Console.Write(mas[i] + "\t");
+                        count++;
+                    }
+
+
+
+                }
+                Console.ReadKey();
+            }
+            catch
             {
-                if (arr[i] >= 0) { Console.Write(arr[i] + "\t"); }
+                Console.WriteLine("Вы ввели не число!");
             }
-
-            Console.ReadKey();
 
             //Задание 2
 
-            /*int m = 7;
-            int n = 7;
-
-            int[,] arr = new int[m, n];
-
-            int count = 1;
-
-            for (int i = 0; i < m; i++)
-                for (int j = 0; j < n; j++)
-                    arr[i, j] = count++;
-
-            Console.WriteLine("Массив: ");
-            for (int i = 0; i < m; i++)
+            /*int[,] mas = new int[7, 7];
+            Random ran = new Random();
+            //ввод массива рандомными числами и его вывод
+            for (int i = 0; i < 7; i++)
             {
-                for (int j = 0; j < n; j++)
-                    Console.Write(arr[i, j] + "\t");
+                for (int j = 0; j < 7; j++)
+                {
+                    mas[i, j] = ran.Next(100);
+                    Console.Write(mas[i, j] + "\t");
+                }
+                Console.WriteLine();
                 Console.WriteLine();
             }
-
-            Console.WriteLine("\nПеревернутый массив: ");
-            for (int j = 0; j < n; j++)
+            //поворот массива 
+            for (int k = 0; k < 3; k++)
             {
-                for (int i = m - 1; i >= 0; i--)
-
-                    Console.Write(arr[i, j] + "\t");
+                for (int i = 0; i < Math.Floor(Convert.ToDouble(7) / 2); i++)
+                {
+                    for (int j = 0; j < Math.Ceiling(Convert.ToDouble(7) / 2); j++)
+                    {
+                        int rotate = mas[i, j];
+                        mas[i, j] = mas[j, 7 - 1 - i];
+                        mas[j, 7 - 1 - i] = mas[7 - 1 - i, 7 - 1 - j];
+                        mas[7 - 1 - i, 7 - 1 - j] = mas[7 - 1 - j, i];
+                        mas[7 - 1 - j, i] = rotate;
+                    }
+                }
+            }
+            //вывод повернутого массива
+            Console.WriteLine("Повернутый массив:");
+            for (int i = 0; i < 7; i++)
+            {
+                for (int j = 0; j < 7; j++)
+                {
+                    Console.Write(mas[i, j] + "\t");
+                }
+                Console.WriteLine();
                 Console.WriteLine();
             }
-
             Console.ReadKey();*/
 
             //Задание 3
